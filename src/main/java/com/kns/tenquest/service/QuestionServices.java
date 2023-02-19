@@ -13,7 +13,7 @@ public class QuestionServices {
     @Autowired
     QuestionRepository questionRepository;
 
-    public List<Question> getAllquestions(){
+    public List<Question> getAllQuestions(){
         return questionRepository.findAll();
     }
 }
