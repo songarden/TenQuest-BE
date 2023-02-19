@@ -20,7 +20,7 @@ public class Question {
     private String questionContent;
 
 
-    @ManyToOne // Many = Question , One = Category  : 한개의 카테고리는. .여러개의 질문객체를 가질수있다 .
+    //@ManyToOne // Many = Question , One = Category  : 한개의 카테고리는. .여러개의 질문객체를 가질수있다 . : hibernate 에서는 못씀
     @JoinColumn(name="category_id")  //이부분 맞는지 잘모르겠음 확인해봐야됨 다시
     @Column(name="question_category_id")
     private int questionCategoryId;
